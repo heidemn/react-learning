@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+    </head>
+    <body>
+        <div id="my-app"></div>
+
+        <script>
+            const el = React.createElement('h1', { hello: 'world' }, 'Welcome to React!');
+            ReactDOM.render(el, document.getElementById('my-app'));
+        </script>
+    </body>
+</html>
