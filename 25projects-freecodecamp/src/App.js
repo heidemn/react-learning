@@ -31,6 +31,9 @@ function App() {
 
         <h4>Linked Accordions, with max. 1 open:</h4>
         <Accordions items={data}></Accordions>
+
+        <h4>Linked Accordions, with multi-select:</h4>
+        <Accordions items={data} multiSelect={true}></Accordions>
       </header>
     </div>
   );
