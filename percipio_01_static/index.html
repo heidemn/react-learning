@@ -6,10 +6,12 @@
     </head>
     <body>
         <div id="my-app"></div>
+        <div id="my-app2"></div>
 
         <script>
             const el = React.createElement('h1', { hello: 'world' }, 'Welcome to React!');
             ReactDOM.render(el, document.getElementById('my-app'));
+            ReactDOM.render(el, document.getElementById('my-app2')); //.children[0]);
         </script>
     </body>
 </html>

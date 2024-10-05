@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 interface Item {
   id: number;
@@ -15,9 +15,9 @@ export function Accordion({ id, question, answer }: Item) {
 
   return (
     <div>
-      <button onClick={handleClick}>{expanded ? '[–]' : '[+]'}</button>
+      <button onClick={handleClick}>{expanded ? "[–]" : "[+]"}</button>
       Q: {question}
-      { expanded ? <div style={{fontSize: '15px'}}>{answer}</div> : null }
+      {expanded ? <div style={{ fontSize: "15px" }}>{answer}</div> : null}
     </div>
-  )
+  );
 }
