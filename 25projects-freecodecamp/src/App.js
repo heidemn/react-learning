@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
-import { Accordion } from './components/accordion';
+import { Accordion } from './components/accordion/index.tsx';
+import { Accordions } from './components/accordions/index.tsx';
 import data from './components/accordion/data';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <h4>Independent Accordions:</h4>
         {data.map(item => 
           <Accordion
             question={item.question}
@@ -27,6 +29,9 @@ function App() {
           >
           </Accordion>
         )}
+
+        <h4>Linked Accordions, with max. 1 open:</h4>
+        <Accordions items={data}></Accordions>
       </header>
     </div>
   );

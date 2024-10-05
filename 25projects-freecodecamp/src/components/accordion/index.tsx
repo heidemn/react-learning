@@ -1,6 +1,12 @@
 import { useState } from 'react';
 
-export function Accordion({ id, question, answer }) {
+interface Item {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+export function Accordion({ id, question, answer }: Item) {
   const [expanded, setExpanded] = useState(false);
 
   function handleClick() {
