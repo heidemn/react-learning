@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Accordion } from "./components/accordion/index.tsx";
 import { Accordions } from "./components/accordions/index.tsx";
+import { Color } from "./components/color/index.tsx";
 import data from "./components/accordion/data";
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <h4>Color:</h4>
+        <Color></Color>
+
         <h4>Independent Accordions:</h4>
         {data.map((item) => (
           <Accordion
