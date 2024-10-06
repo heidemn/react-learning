@@ -15,7 +15,9 @@ export function Accordion({ id, question, answer }: Item) {
 
   return (
     <div>
-      <button onClick={handleClick} style={{cursor: 'pointer'}}>{expanded ? "[–]" : "[+]"}</button>
+      <button onClick={handleClick} style={{ cursor: "pointer" }}>
+        {expanded ? "[–]" : "[+]"}
+      </button>
       Q: {question}
       {expanded ? <div style={{ fontSize: "15px" }}>{answer}</div> : null}
     </div>
